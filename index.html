@@ -183,64 +183,143 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h1><h2 id="1-数学表示"><a href="#1-数学表示" class="headerlink" title="1. 数学表示"></a>1. 数学表示</h2><p>四元数是一种扩展的虚数，有三个虚部的项，表示为：</p>
-<p>$$<br>\hat{\bold{q}}&#x3D;(\rm\bold{q_{\rm\it{v}}},\it{q_w}).<br>$$</p>
-<p>$$<br>\hat{\bold{q}}&#x3D;iq_x + jq_y + kq_z + q_w<br>$$</p>
+          <h1>四元数</h1>
+<h2 id="1-数学表示">1. 数学表示</h2>
+<p>四元数是一种扩展的虚数，有三个虚部的项，表示为：</p>
+<p>$$<br>
+\hat{\bold{q}}=(\rm\bold{q_{\rm\it{v}}},\it{q_w}).<br>
+$$</p>
+<p>$$<br>
+\hat{\bold{q}}=iq_x + jq_y + kq_z + q_w<br>
+$$</p>
 <p>其中</p>
-<p>$$<br>i^2 &#x3D; j^2 &#x3D; k^2 &#x3D; -1, jk&#x3D;-kj&#x3D;i, ki&#x3D;-ik&#x3D;j, ij&#x3D;-ji&#x3D;k.<br>$$</p>
+<p>$$<br>
+i^2 = j^2 = k^2 = -1, jk=-kj=i, ki=-ik=j, ij=-ji=k.<br>
+$$</p>
 <p>$i,j,k$ 为虚数单位。</p>
-<h4 id="1-1-四元数的运算"><a href="#1-1-四元数的运算" class="headerlink" title="1.1 四元数的运算"></a>1.1 四元数的运算</h4><p><strong>乘法</strong></p>
-<p>$$<br>\hat{\bold{q}}\hat{\bold{r}}&#x3D;<br>(\bold{q}_v \times \bold{r}_v + r_w \bold{q}_v + q_w \bold{r}_v,;<br> q_w r_w - \bold{q}_v\cdot \bold{r}_v).<br>$$</p>
+<h4 id="1-1-四元数的运算">1.1 四元数的运算</h4>
+<p><strong>乘法</strong></p>
+<p>$$<br>
+\hat{\bold{q}}\hat{\bold{r}}=<br>
+(\bold{q}_v \times \bold{r}_v + r_w \bold{q}_v + q_w \bold{r}_v,;<br>
+q_w r_w - \bold{q}_v\cdot \bold{r}_v).<br>
+$$</p>
 <p><strong>加法</strong></p>
-<p>$$<br>\hat{\bold{q}}+\hat{\bold{r}}&#x3D;(\bold{q}_v+\bold{r}_v,q_w+r_w).<br>$$</p>
+<p>$$<br>
+\hat{\bold{q}}+\hat{\bold{r}}=(\bold{q}_v+\bold{r}_v,q_w+r_w).<br>
+$$</p>
 <p><strong>共轭(Conjugate)</strong></p>
-<p>$$<br>\hat{\bold{q}}^*&#x3D;(-\bold{q}_v,q_w).<br>$$</p>
+<p>$$<br>
+\hat{\bold{q}}^*=(-\bold{q}_v,q_w).<br>
+$$</p>
 <p><strong>范数(Norm)</strong></p>
-<p>$$<br>n(\hat{\bold{q}})<br>&#x3D;\sqrt{\hat{\bold{q}}\hat{\bold{q}}^*}<br>&#x3D;\sqrt{\hat{\bold{q}}^*\hat{\bold{q}}}<br>&#x3D;\sqrt{\bold{q}_v \cdot \bold{q}_v + q_w^2}<br>&#x3D;\sqrt{q_x^2+q_y^2+q_z^2+q_w^2}.<br>$$</p>
+<p>$$<br>
+n(\hat{\bold{q}})<br>
+=\sqrt{\hat{\bold{q}}\hat{\bold{q}}^<em>}<br>
+=\sqrt{\hat{\bold{q}}^</em>\hat{\bold{q}}}<br>
+=\sqrt{\bold{q}_v \cdot \bold{q}_v + q_w^2}<br>
+=\sqrt{q_x<sup>2+q_y</sup>2+q_z<sup>2+q_w</sup>2}.<br>
+$$</p>
 <p><strong>单位四元数(Identity)</strong></p>
-<p>$$<br>\hat{\bold{i}}&#x3D;(\bold{0}, 1).<br>$$</p>
-<p> <strong>四元数的逆(Inverse)</strong></p>
-<p>$$<br>\hat{\bold{q}}^{-1}&#x3D;\frac{1}{n(\hat{\bold{q}})^2}\hat{\bold{q}}^*.<br>$$</p>
+<p>$$<br>
+\hat{\bold{i}}=(\bold{0}, 1).<br>
+$$</p>
+<p><strong>四元数的逆(Inverse)</strong></p>
+<p>$$<br>
+\hat{\bold{q}}<sup>{-1}=\frac{1}{n(\hat{\bold{q}})</sup>2}\hat{\bold{q}}^*.<br>
+$$</p>
 <p><strong>数乘</strong></p>
-<p>$$<br>s\hat{\bold{q}}&#x3D;\hat{\bold{q}}s&#x3D;(s\bold{q}_v, sq_w).<br>$$</p>
-<h4 id="1-2-四元数运算规律"><a href="#1-2-四元数运算规律" class="headerlink" title="1.2 四元数运算规律"></a>1.2 四元数运算规律</h4><p><strong>共轭运算</strong></p>
-<p>$$<br>(\hat{\bold{q}}^*)^*&#x3D;\hat{\bold{q}},<br>$$</p>
-<p>$$<br>(\hat{\bold{q}}+\hat{\bold{r}})^*&#x3D;\hat{\bold{q}}^*+\hat{\bold{r}}^*,<br>$$</p>
-<p>$$<br>(\hat{\bold{q}}\hat{\bold{r}})^*&#x3D;\hat{\bold{r}}^* \hat{\bold{q}}^*.<br>$$</p>
+<p>$$<br>
+s\hat{\bold{q}}=\hat{\bold{q}}s=(s\bold{q}_v, sq_w).<br>
+$$</p>
+<h4 id="1-2-四元数运算规律">1.2 四元数运算规律</h4>
+<p><strong>共轭运算</strong></p>
+<p>$$<br>
+(\hat{\bold{q}}<sup>*)</sup>*=\hat{\bold{q}},<br>
+$$</p>
+<p>$$<br>
+(\hat{\bold{q}}+\hat{\bold{r}})<sup>*=\hat{\bold{q}}</sup><em>+\hat{\bold{r}}^</em>,<br>
+$$</p>
+<p>$$<br>
+(\hat{\bold{q}}\hat{\bold{r}})<sup>*=\hat{\bold{r}}</sup>* \hat{\bold{q}}^*.<br>
+$$</p>
 <p><strong>范数运算</strong></p>
-<p>$$<br>n(\hat{\bold{q}}^*)&#x3D;n(\hat{\bold{q}}),<br>$$</p>
-<p>$$<br>n(\hat{\bold{q}}\hat{\bold{r}})&#x3D;n(\hat{\bold{q}})n(\hat{\bold{r}}).<br>$$</p>
+<p>$$<br>
+n(\hat{\bold{q}}^*)=n(\hat{\bold{q}}),<br>
+$$</p>
+<p>$$<br>
+n(\hat{\bold{q}}\hat{\bold{r}})=n(\hat{\bold{q}})n(\hat{\bold{r}}).<br>
+$$</p>
 <p><strong>线性</strong></p>
-<p>$$<br>\hat{\bold{p}}(s\hat{\bold q} + t\hat{\bold r})<br>&#x3D; s\hat{\bold p}\hat{\bold q} + t\hat{\bold p}\hat{\bold r},<br>$$</p>
-<p>$$<br>(s\hat{\bold{p}}+t\hat{\bold q})\hat{\bold r} &#x3D; s\hat{\bold p}\hat{\bold r} + t\hat{\bold q}\hat{\bold r}.<br>$$</p>
+<p>$$<br>
+\hat{\bold{p}}(s\hat{\bold q} + t\hat{\bold r})<br>
+= s\hat{\bold p}\hat{\bold q} + t\hat{\bold p}\hat{\bold r},<br>
+$$</p>
+<p>$$<br>
+(s\hat{\bold{p}}+t\hat{\bold q})\hat{\bold r} = s\hat{\bold p}\hat{\bold r} + t\hat{\bold q}\hat{\bold r}.<br>
+$$</p>
 <p><strong>结合性</strong></p>
-<p>$$<br>\hat{\bold p}(\hat{\bold q}\hat{\bold r})<br>&#x3D; (\hat{\bold p}\hat{\bold q})\hat{\bold r}.<br>$$</p>
-<h4 id="1-3-单位四元数"><a href="#1-3-单位四元数" class="headerlink" title="1.3 单位四元数"></a>1.3 单位四元数</h4><p>当四元数$\hat{\bold q}&#x3D;(\hat{\bold q}_v, q_w)$ 满足范数$n(\hat{\bold q})&#x3D;1$时，它是一个单位四元数。</p>
+<p>$$<br>
+\hat{\bold p}(\hat{\bold q}\hat{\bold r})<br>
+= (\hat{\bold p}\hat{\bold q})\hat{\bold r}.<br>
+$$</p>
+<h4 id="1-3-单位四元数">1.3 单位四元数</h4>
+<p>当四元数$\hat{\bold q}=(\hat{\bold q}_v, q_w)$ 满足范数$n(\hat{\bold q})=1$时，它是一个单位四元数。</p>
 <p>单位四元数又可表示为：</p>
-<p>$$<br>\hat{\bold q}&#x3D;(sin\phi\bold{u}_q,, cos\phi).<br>$$</p>
+<p>$$<br>
+\hat{\bold q}=(sin\phi\bold{u}_q,, cos\phi).<br>
+$$</p>
 <p>$\hat{\bold q}$ 表示三维空间中绕旋转轴 $\bold{u}_q$ 旋转 $2\phi$ 弧度。</p>
 <p>单位四元数可表达三维空间中的任意旋转，没有万向节死锁问题，且易于进行插值。</p>
 <p>单位四元数的共轭与逆相同。</p>
-<p>单位四元数的幂 $\hat{\bold q}^t&#x3D;(sin(\phi t)\bold{u}_q + cos(\phi t)).$</p>
-<h2 id="2-四元数的变换"><a href="#2-四元数的变换" class="headerlink" title="2. 四元数的变换"></a>2. 四元数的变换</h2><p>对空间中任一点 $\bold p$ ，可构建四元数 $\hat{\bold p}&#x3D;(p_x,p_y,p_z,1.0)$ 。设有四元数 $\hat{\bold q}&#x3D;(\sin \phi {\bold u}_q , \cos \phi)$，那么</p>
-<p>$$<br>\hat{\bold q} \hat{\bold p} \hat{\bold q}^{-1}<br>$$</p>
+<p>单位四元数的幂 $\hat{\bold q}^t=(sin(\phi t)\bold{u}_q + cos(\phi t)).$</p>
+<h2 id="2-四元数的变换">2. 四元数的变换</h2>
+<p>对空间中任一点 $\bold p$ ，可构建四元数 $\hat{\bold p}=(p_x,p_y,p_z,1.0)$ 。设有四元数 $\hat{\bold q}=(\sin \phi {\bold u}_q , \cos \phi)$，那么</p>
+<p>$$<br>
+\hat{\bold q} \hat{\bold p} \hat{\bold q}^{-1}<br>
+$$</p>
 <p>就用四元数 $\hat {\bold q}$ 旋转了点 $\bold p$ 。</p>
-<p>当使用单位四元数，有$\hat{\bold q}^{-1}&#x3D;\hat{\bold q}^*$。</p>
+<p>当使用单位四元数，有$\hat{\bold q}^{-1}=\hat{\bold q}^*$。</p>
 <p>$\hat{\bold q} 和 -\hat{\bold q}$ 表示同一个旋转（既反转旋转轴又反转旋转角）。</p>
 <p>依次使用四元数 $\hat{\bold q}$ 和 $\hat{\bold r}$ 进行变换，等价于使用它们的乘积 $\hat{\bold q}\hat{\bold r}$ 进行变换。</p>
-<h4 id="2-1-四元数转为矩阵"><a href="#2-1-四元数转为矩阵" class="headerlink" title="2.1 四元数转为矩阵"></a>2.1 四元数转为矩阵</h4><p>对四元数$\hat{\bold q}&#x3D;(q_x, q_y, q_z, q_w)$，设 $s&#x3D;2&#x2F;(n(\hat{\bold q}))^2$ ，可转换为矩阵：</p>
-<p>$$<br>\bold{M}^q &#x3D; \left( \begin{matrix}<br>1-s(q_y^2+q_z^2) &amp; s(q_x q_y - q_w q_z) &amp; s(q_x q_z + q_w q_y) &amp; 0 \<br>s(q_x q_y + q_w q_z) &amp; 1 - s(q_x^2+q_z^2) &amp; s(q_y q_z - q_wq_x) &amp; 0 \<br>s(q_x q_z - q_w q_y) &amp; s(q_y q_z + q_w q_x) &amp; 1 - s(q_x^2+q_y^2) &amp; 0 \<br>0 &amp; 0 &amp; 0 &amp; 1<br>\end{matrix} \right)<br>$$</p>
-<h4 id="2-2-矩阵转为单位四元数"><a href="#2-2-矩阵转为单位四元数" class="headerlink" title="2.2 矩阵转为单位四元数"></a>2.2 矩阵转为单位四元数</h4><p>将矩阵 $\bold{M}^q$ 转化为四元数 $(q_x, q_y, q_z, q_w)$ ：</p>
-<p>$$<br>q_w &#x3D; \frac{1}{2} \sqrt{tr(\bold{M}^q)},<br>$$</p>
-<p>$$<br>q_x &#x3D; \frac{m_{21}^q-m_{12}^q}{4q_w},;<br> q_y&#x3D;\frac{m_{02}^q-m_{20}^q}{4q_w},;<br>q_z&#x3D;\frac{m_{10}^q-m_{01}^q}{4q_w}.<br>$$</p>
-<h4 id="2-3-球面线性插值"><a href="#2-3-球面线性插值" class="headerlink" title="2.3 球面线性插值"></a>2.3 球面线性插值</h4><p>在四元数 $\hat{\bold q}$ 和 $\hat{\bold r}$ 之间根据参数 $t \in [0, 1]$ 进行插值：</p>
-<p>$$<br>{\rm slerp}(\hat{\bold q}, \hat{\bold r}, t)<br>&#x3D; \frac{\sin(\phi (1-t))}{\sin \phi} \hat{\bold q} </p>
+<h4 id="2-1-四元数转为矩阵">2.1 四元数转为矩阵</h4>
+<p>对四元数$\hat{\bold q}=(q_x, q_y, q_z, q_w)$，设 $s=2/(n(\hat{\bold q}))^2$ ，可转换为矩阵：</p>
+<p>$$<br>
+\bold{M}^q = \left( \begin{matrix}<br>
+1-s(q_y<sup>2+q_z</sup>2) &amp; s(q_x q_y - q_w q_z) &amp; s(q_x q_z + q_w q_y) &amp; 0 \<br>
+s(q_x q_y + q_w q_z) &amp; 1 - s(q_x<sup>2+q_z</sup>2) &amp; s(q_y q_z - q_wq_x) &amp; 0 \<br>
+s(q_x q_z - q_w q_y) &amp; s(q_y q_z + q_w q_x) &amp; 1 - s(q_x<sup>2+q_y</sup>2) &amp; 0 \<br>
+0 &amp; 0 &amp; 0 &amp; 1<br>
+\end{matrix} \right)<br>
+$$</p>
+<h4 id="2-2-矩阵转为单位四元数">2.2 矩阵转为单位四元数</h4>
+<p>将矩阵 $\bold{M}^q$ 转化为四元数 $(q_x, q_y, q_z, q_w)$ ：</p>
+<p>$$<br>
+q_w = \frac{1}{2} \sqrt{tr(\bold{M}^q)},<br>
+$$</p>
+<p>$$<br>
+q_x = \frac{m_{21}<sup>q-m_{12}</sup>q}{4q_w},;<br>
+q_y=\frac{m_{02}<sup>q-m_{20}</sup>q}{4q_w},;<br>
+q_z=\frac{m_{10}<sup>q-m_{01}</sup>q}{4q_w}.<br>
+$$</p>
+<h4 id="2-3-球面线性插值">2.3 球面线性插值</h4>
+<p>在四元数 $\hat{\bold q}$ 和 $\hat{\bold r}$ 之间根据参数 $t \in [0, 1]$ 进行插值：</p>
+<p>$$<br>
+{\rm slerp}(\hat{\bold q}, \hat{\bold r}, t)<br>
+= \frac{\sin(\phi (1-t))}{\sin \phi} \hat{\bold q}</p>
 <ul>
-<li>\frac{\sin(\phi t)}{\sin \phi} \hat{\bold r}<br>$$</li>
+<li>\frac{\sin(\phi t)}{\sin \phi} \hat{\bold r}<br>
+$$</li>
 </ul>
-<h4 id="2-4-构造从单位向量-bold-s-到单位向量-bold-t-的旋转"><a href="#2-4-构造从单位向量-bold-s-到单位向量-bold-t-的旋转" class="headerlink" title="2.4 构造从单位向量 $\bold s$ 到单位向量 $\bold t$ 的旋转"></a>2.4 构造从单位向量 $\bold s$ 到单位向量 $\bold t$ 的旋转</h4><p>定义旋转轴 ${\bold u}&#x3D;({\bold s} \times {\bold t})&#x2F;\lVert {\bold s} \times {\bold t} \rVert$ ，标量 $e&#x3D;{\bold s}\cdot{\bold t}&#x3D;cos(2\phi)$ 。（其中$2\phi$即是旋转的弧度）</p>
-<p>$$<br>\hat{\bold q}&#x3D;({\bold q}_v, q_w)<br>&#x3D;(\sin\phi{\bold u},, \cos \phi)<br>&#x3D;(\frac{1}{\sqrt{2(1+e)}})({\bold s}\times{\bold t}),, \frac{\sqrt{2(1+e)}}{2}).<br>$$</p>
-<h2 id="3-参考资料"><a href="#3-参考资料" class="headerlink" title="3. 参考资料"></a>3. 参考资料</h2><p>Real-Time Rendering (4th Edition) - 4.3节</p>
+<h4 id="2-4-构造从单位向量-bold-s-到单位向量-bold-t-的旋转">2.4 构造从单位向量 $\bold s$ 到单位向量 $\bold t$ 的旋转</h4>
+<p>定义旋转轴 ${\bold u}=({\bold s} \times {\bold t})/\lVert {\bold s} \times {\bold t} \rVert$ ，标量 $e={\bold s}\cdot{\bold t}=cos(2\phi)$ 。（其中$2\phi$即是旋转的弧度）</p>
+<p>$$<br>
+\hat{\bold q}=({\bold q}_v, q_w)<br>
+=(\sin\phi{\bold u},, \cos \phi)<br>
+=(\frac{1}{\sqrt{2(1+e)}})({\bold s}\times{\bold t}),, \frac{\sqrt{2(1+e)}}{2}).<br>
+$$</p>
+<h2 id="3-参考资料">3. 参考资料</h2>
+<p>Real-Time Rendering (4th Edition) - 4.3节</p>
 
       
     </div>
@@ -305,7 +384,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="使用Assimp导出网格为任意格式"><a href="#使用Assimp导出网格为任意格式" class="headerlink" title="使用Assimp导出网格为任意格式"></a>使用Assimp导出网格为任意格式</h1><p>生成网格的顶点和面后，使用Assimp库导出为任意格式。<br>注意建立Assimp的aiScene对象时，除了网格数据，还有其他必须的辅助数据也要初始化，才能正常导出。</p>
+          <h1>使用Assimp导出网格为任意格式</h1>
+<p>生成网格的顶点和面后，使用Assimp库导出为任意格式。<br>
+注意建立Assimp的aiScene对象时，除了网格数据，还有其他必须的辅助数据也要初始化，才能正常导出。</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">WriteMesh</span><span class="params">(</span></span><br><span class="line"><span class="params">    <span class="type">const</span> <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;Point_3&gt;&amp; vertices,   <span class="comment">//顶点数据</span></span></span><br><span class="line"><span class="params">    <span class="type">const</span> <span class="built_in">std</span>::<span class="built_in">vector</span>&lt;Triangle&gt;&amp; faces,     <span class="comment">//顶点索引</span></span></span><br><span class="line"><span class="params">    <span class="type">const</span> <span class="built_in">std</span>::<span class="built_in">string</span>&amp; path                 <span class="comment">//导出路径</span></span></span><br><span class="line"><span class="params">)</span></span><br><span class="line">&#123;</span><br><span class="line">    Assimp::Exporter exporter;</span><br><span class="line">    <span class="keyword">auto</span> scene = <span class="built_in">std</span>::make_unique&lt;aiScene&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="comment">//每个aiScene必须有mRootNode</span></span><br><span class="line">    scene-&gt;mRootNode = new aiNode();</span><br><span class="line">    <span class="comment">//建立mRootNode的mMeshes数组,表示位于这个节点下的网格编号. 这里只有0号网格.</span></span><br><span class="line">    scene-&gt;mRootNode-&gt;mNumMeshes = <span class="number">1</span>;</span><br><span class="line">    scene-&gt;mRootNode-&gt;mMeshes = new <span class="type">unsigned</span>[<span class="number">1</span>];</span><br><span class="line">    scene-&gt;mRootNode-&gt;mMeshes[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//必须有一个材质，这里设为空材质.</span></span><br><span class="line">    scene-&gt;mNumMaterials = <span class="number">1</span>;</span><br><span class="line">    scene-&gt;mMaterials = new aiMaterial*[]&#123; new aiMaterial() &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//必须初始化mMetadata.</span></span><br><span class="line">    scene-&gt;mMetaData = new aiMetadata();</span><br><span class="line"></span><br><span class="line">    <span class="comment">//场景的网格数据</span></span><br><span class="line">    scene-&gt;mNumMeshes = <span class="number">1</span>;</span><br><span class="line">    scene-&gt;mMeshes = new aiMesh*[<span class="number">1</span>]&#123; new aiMesh() &#125;;</span><br><span class="line">    aiMesh* m = scene-&gt;mMeshes[<span class="number">0</span>];</span><br><span class="line">    m-&gt;mNumFaces = faces.size();</span><br><span class="line">    m-&gt;mNumVertices = vertices.size();</span><br><span class="line">    m-&gt;mVertices = new aiVector3D[m-&gt;mNumVertices];</span><br><span class="line">    m-&gt;mFaces = new aiFace[m-&gt;mNumFaces];</span><br><span class="line">    m-&gt;mPrimitiveTypes = aiPrimitiveType_TRIANGLE;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; m-&gt;mNumVertices; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        m-&gt;mVertices[i] = aiVector3D(vertices[i].x(), vertices[i].y(), vertices[i].z());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; m-&gt;mNumFaces; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        m-&gt;mFaces[i].mNumIndices = <span class="number">3</span>;</span><br><span class="line">        m-&gt;mFaces[i].mIndices = new <span class="type">unsigned</span> <span class="type">int</span>[<span class="number">3</span>];</span><br><span class="line">        m-&gt;mFaces[i].mIndices[<span class="number">0</span>] = faces[i][<span class="number">0</span>];</span><br><span class="line">        m-&gt;mFaces[i].mIndices[<span class="number">1</span>] = faces[i][<span class="number">1</span>];</span><br><span class="line">        m-&gt;mFaces[i].mIndices[<span class="number">2</span>] = faces[i][<span class="number">2</span>];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//根据后缀区分ply和stl格式按照二进制还是文本格式存储。&quot;plyb&quot;和&quot;stlb&quot;代表导出二进制格式文件。</span></span><br><span class="line">    <span class="comment">//这里把ply和stl都设为了导出二进制格式。</span></span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">string</span> postfix = path.substr(path.rfind(<span class="string">&#x27;.&#x27;</span>) + <span class="number">1</span>);</span><br><span class="line">    <span class="keyword">if</span>(postfix == <span class="built_in">std</span>::<span class="built_in">string</span>(<span class="string">&quot;ply&quot;</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        postfix = <span class="string">&quot;plyb&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (postfix == <span class="built_in">std</span>::<span class="built_in">string</span>(<span class="string">&quot;stl&quot;</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        postfix = <span class="string">&quot;stlb&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    exporter.Export(scene.get(), postfix, path);</span><br><span class="line">    <span class="comment">//注意不需要释放前面new动态分配的内存，aiScene在析构时会自动释放。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
